@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Contact Me</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+
+
+<body>
+
+    <h1 class="pagetitles"> Contact Me </h1>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <nav align="center">
+            <a href="aboutpage.html" class="nav">About Matt</a>
+            <a href="workhistory.html" class="nav">Work History</a>
+            <!--<a href="pages/fullresume.html" class="nav">View Matt's Resume Document</a>-->
+            <a href="contact.html" class="nav"> Contact</a>
+        </nav>
+    </div>
+    <br><br>
+
+<p class="collabform">
+    If you have a project you'd like to collaborate on, or if you are looking to make a payment or deposit on
+    an existing collaboration with me, please submit the form below. Fill out all relevant information for your
+    particular scenario.
+</p>
+
+<form method="POST" action="mailto:mc@mattcreel.com" enctype="text/plain">
+<table>
+    <tr>
+        <input type="text" name="name" id="name" size="20" placeholder="Your Name">
+    </tr>
+
+<br>
+    <tr>
+        <input type="text" name="street" id="street" size="20" placeholder="Street">
+    </tr>
+<br>
+
+    <tr>
+        <input type="text" name="city" id="city" size="20" placeholder="City">
+    </tr>
+<br>
+
+    <tr>
+        <input type="text" name="zipcode" id="zipcode" size="20" placeholder="Zip Code">
+    </tr>
+<br>
+
+    <tr>
+        <input type="text" name="country" id="country" size="20" placeholder="Country">
+    </tr>
+<br>
+
+<tr>
+    <select name="cardtype" size="3">
+
+        <option value="option-1">American Express
+        
+        <option value="option-2">Mastercard
+        
+        <option value="option-3">Visa
+        
+    </select>
+</tr>
+<br>
+
+    <tr>
+        <input type="text" name="cardnumber" id="cardnumber" size="20" placeholder="Cardnumber"></td>
+    </tr>
+<br>
+
+    <tr>
+        <select id="expmonth" name="expmonth">
+        <option value="" disabled selected hidden>Enter Expiration Month...</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+        </select>
+    </tr>
+<br>
+
+    <tr>
+        <select id="expyear" name="expyear">
+            <option value="" disabled selected hidden>Enter Expiration Year...</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+            </select>
+    </tr>
+<br>
+
+    <tr>
+        <textarea name="comments" rows="10" cols="60" placeholder="Comments"></textarea>
+    </tr>
+<br>
+
+    <input type="submit" value="Submit">
+
+<br>
+
+    <input type="reset" value="Reset">
+
+</table>
+
+</form>
+<!-- </div> -->
+
+
+</body>
+
+
+
+</html>

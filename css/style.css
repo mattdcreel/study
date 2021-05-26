@@ -1,0 +1,388 @@
+/* CSS stylesheet for Week 4 Assignment. 
+Document Name: style.css*/
+
+*{
+    box-sizing: border-box;
+  }
+
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+/* IDs */
+
+#container {
+    background-image: url(../images/bushlakerender.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#workhistory {
+    background-image: url(../images/officeequip.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#profile {
+    background-image: url(../images/mcprofilereduct1copy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#educontentcol1 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    /*grid-template-row:repeat (3, auto);*/
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 0 auto;
+}
+
+#educontentcol2 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /*grid-template-row:repeat (3, auto);*/
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 0 auto;
+}
+
+#educontentcol3 {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    /*grid-template-row:repeat (3, auto);*/
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 0 auto;
+}
+
+#tamulogo1 {
+    text-align: right;
+}
+
+#tamulogo2 {
+    text-align: right;
+}
+
+#untlogo {
+    text-align: right;
+}
+
+
+/* CLASSES */
+
+
+/*header, title size classes - h1, h2, h3, etc*/
+
+h1.pagetitles {
+    font-size: 40pt;
+    color: black;
+    text-align: center;
+}
+
+h2.resumesectionheaders {
+    font-size: 30pt;
+    color: black;
+    text-align: center;
+}
+
+h3.resumeimage {
+    font-size: 20pt;
+    color: black;
+    text-align: center;
+}
+
+h3.companynames {
+    font-size: 20pt;
+    color: black;
+    text-align: left;
+}
+
+
+/* paragraph classes*/
+
+p.about {
+    padding-left: 15em;
+    padding-right: 15em;
+    color: black;
+    text-align: center;
+}
+
+p.profiletext {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
+
+
+/* div classes*/
+
+div.navbar-inverse {
+    background-color: gainsboro;
+}
+
+div.educationheader {
+    font-size: 30pt;
+    color: black;
+    text-align: center;
+    position: absolute top: 50%;
+    left: 50%;
+}
+
+div.workhistoryheader {
+    font-size: 30pt;
+    color: black;
+    text-align: center;
+    position: absolute top: 50%;
+    left: 50%;
+}
+
+div.profileheader {
+    font-size: 30pt;
+    color: whitesmoke;
+    text-align: center;
+    position: absolute top: 50%;
+    left: 50%;
+}
+
+div.datesemployed {
+    font-style: italic;
+}
+
+
+/* list classes */
+
+ul.achievements {
+    list-style-type: disc;
+}
+
+
+/* link styles*/
+
+
+/* unvisited link */
+
+a:link {
+    color: skyblue;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: darkblue;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: green;
+}
+
+
+/* selected link */
+
+a:active {
+    color: red;
+}
+
+
+/* NAV bar links*/
+
+a.nav:link {
+    color: blue;
+    text-align: center;
+    display: inline-block;
+    padding: 8px;
+}
+
+a.nav:visited {
+    color: purple;
+}
+
+a.nav:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a.nav:active {
+    color: red;
+}
+
+
+/* image formatting - done through div classes */
+
+div.headshot {
+    text-align: center
+}
+
+div.dogs {
+    text-align: center
+}
+
+div.hobbies {
+    text-align: center
+}
+
+div.resumeimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+div.smallresumeimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
+}
+
+
+/* index.html border frame*/
+
+@media screen and (min-width: 50rem) {
+    .outer-box-frame {
+        border: .3rem solid #808080;
+        margin: 5rem auto;
+        /*the auto for the left/right keeps the page centered*/
+        padding: 3rem;
+        max-width: 65rem; // min-width - 2(padding + border)
+    }
+    body {
+        background-color: #FFFFFF;
+    }
+}
+
+.outer-box-frame {
+    background-color: #ffffff;
+}
+
+
+
+/*Contact Form*/
+
+p.collabform {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    background-color: gainsboro;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+table {
+    border: 1px solid black;
+    width: 50%;
+    border: 3px solid black;
+    border-spacing: 15px;
+    border-collapse: collapse;
+}
+
+input[type=text], [type=month], select, textarea {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding: 12px;
+    margin: 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize:vertical;
+  }
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+  input[type=submit] {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  input[type=reset] {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    background-color: rgb(173, 194, 235);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+  .container {
+  width: 50%;
+  border-radius: 5px;
+  background-color: gainsboro;
+  padding: 50px;
+}
+
+/* Old dropdown form that was replaced by the above
+tr.dropdown {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding: 12px;
+    margin: 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize:vertical;
+    display: inline-block;
+  }
+  
+tr.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+tr.dropdown:hover tr.dropdown-content {
+    display: block;
+  }
+  */

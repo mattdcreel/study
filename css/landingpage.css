@@ -1,0 +1,27 @@
+
+
+body {
+    background-image: URL('../images/mcstandingprofile.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+.aboutbutton a:link,
+.aboutbutton a:visited {
+    color: white;
+}
+
+.aboutbutton {
+    position: absolute;
+    left: 50%;
+    Top: 70%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 300%;
+    color: black;
+    background: transparent;
+}
